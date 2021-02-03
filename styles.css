@@ -1,0 +1,149 @@
+  *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    }
+  .content{
+    background-color:#e6e9ed;
+  }
+    .grid-container {
+      max-width: 980px;
+      margin: auto;
+  }
+  
+  .main-content{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    padding: 2% 0 2% 0;
+  }
+  
+  .header-container{
+    width: 100%;
+    height: 50px;
+    background-color: #47bccf;
+  }
+  
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    color:white;
+  }
+  
+  footer {
+    width: 100%;
+    height: 100px;
+    background-color: #22272d;
+    border-top: 35px solid #47bccf;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 20px 15px 0px;
+    color: white;
+    justify-content: flex-end;
+  }
+  
+  ul li{
+    list-style-type:none;
+  }
+  
+  .list-countries{
+    border-radius: 10px;
+  }
+  .ul-countries li{
+    background-color: white;
+    color: #504e4e;
+    
+  }
+  .li-country{
+    margin: 0 0 10px 0;
+  }
+  
+  .li-country {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px #828282;
+    display:grid;
+    grid-template-columns: 20% 1fr;
+  }
+  .li-country:last-child{
+    border-bottom: none;
+  }
+  .country-number{
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  .li-country span{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    font: 15px Arial, sans-serif;
+    background-color: #47bccf;
+    border-radius: 50%;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+  }
+  .li-country a{
+  
+  color:black;
+  }
+  .li-country p{
+    font-size:12px;
+    font-weight:400;
+  }
+  .country-description{
+    padding: 0 20% 0 0;
+  }
+  
+  .modal-content{
+      background-color:white;
+      width:300px;
+      padding: 30px 50px;
+      margin: 20% auto;
+      position: relative;
+      color: #504e4e;
+      border-radius:20px;
+    }
+    .modal{
+      background-color: rgba(0,0,0,.8);
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      display:none;
+    }
+  
+    .show-modal{
+      display:block;
+    }
+  
+    .close-modal{
+      display:block;
+    }
+  
+  
+    .modal-content p{
+      font-size:20px;
+      font-weight:bold;
+    }
+    .close-button{
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      text-decoration: none;
+      color: #504e4e;
+      font-weight: bold;
+      font-family: Helvetica, sans-serif;
+    }
+
+    @media(min-width:900px){
+      .list-countries{
+        width:50%;
+      }
+  }
