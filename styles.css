@@ -9,6 +9,7 @@
     .grid-container {
       max-width: 980px;
       margin: auto;
+      width:90%;
   }
   
   .main-content{
